@@ -11,85 +11,91 @@ server.headersTimeout = 120 * 1000;
 
 const html = `
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>FORM3</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src='main.js'></script>
-    <style>
-       body {
-        margin: 0;
-        padding: 0;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get the Invite </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MVwRYlbhQ28JcOJyKLN59y5cBy5H7LqzdN6VcygDyv7gHHHWKJX7sM3Vy+GRWBdBqygDf6aY6ly4KJszc+jcyk/" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      display: flex;
+      min-height: 100vh;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5; /* Light gray background */
     }
-        .container{
-            text-align: center;
-            background-color: rgb(243,243,243);
-            width: 80%;
-            height: 80%;
-        }
-        .icon{
-            margin-top: 3%;
-            font-size: 48px;
-            color: rgb(98,162,163);
-            margin-bottom: 4.5%;
-        }
-        .big-title{
-            color: rgba(0, 0, 0, 0.918);
-            font-weight: bolder;
-            font-family:Arial, Helvetica, sans-serif;
-            font-size: 350%;
-            margin-bottom: 3%;
-        }
-        p{
-            color: rgb(82, 82, 82);
-            font-size: 150%;
-            font-family: Arial, Helvetica, sans-serif;
-            margin-bottom: 2%;
-        }
-        input{
-            width: 50%;
-            height: 13%;
-            border:none;
-        }
-        ::placeholder{
-            color: gray;
-            font-size: 150%;
-            font-family: Arial, Helvetica, sans-serif;
 
-        }
-        button{
-            color: rgb(255, 255, 255);
-            font-size: 120%;
-            background-color: rgba(16, 190, 190, 0.856);
-            height: 13%;
-            width: 25%;
-            border-radius: 5%;
-            border: none;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        
-    </style>
+    .container {
+      background-color: #fff; /* White container */
+      border-radius: 10px; /* Rounded corners */
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+      padding: 30px 40px; /* Inner padding */
+      max-width: 500px;
+      width: 100%; /* Adapt to smaller screens */
+      text-align: center;
+    }
+
+    .icon {
+      font-size: 48px;
+      color: #2980b9; /* Blue icon color */
+      margin-bottom: 20px;
+    }
+
+    .big-title {
+      font-size: 2.5rem;
+      color: #333; /* Darker text color */
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 16px;
+      color: #777; /* Lighter text color */
+      margin-bottom: 20px;
+      line-height: 1.5; /* Increased line spacing for readability */
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px 15px;
+      border: 1px solid #ccc; /* Light border */
+      border-radius: 5px;
+      font-size: 16px;
+      box-sizing: border-box; /* Include padding in width */
+    }
+
+    input[type="text"]::placeholder {
+      color: #aaa; /* Grayish placeholder text */
+    }
+
+    button {
+      background-color: #2980b9; /* Blue button color */
+      color: #fff; /* White button text */
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    button:hover {
+      background-color: #3498db; /* Darker blue on hover */
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="icon">
-            <img src="https://png2.cleanpng.com/sh/b724ef8b7085f887cd6a511f65fe5e4d/L0KzQYm3U8MyN5x8iZH0aYP2gLBuTflxcJDzfZ9ubXHsfH7pjCgua5DyiOd9ZYKwebT2jwMudJDsh59ubXHsfH68gfJnOWg1TaNvOEK5SHA9WcA2P2M9TaMAMkK3R4OAUMkyOmo2RuJ3Zx==/kisspng-iphone-email-box-computer-icons-logo-email-5abf17051f8268.6905728515224727091291.png" height="50px" width="50px" alt="ok">
-        </div>
-        <h1 class="big-title">Get the invite</h1>
-        <p>Loren ipsum dolor sit amit consetetur adipiscing elit. Aliquam viverra orici ut.</p>
-        <input type="text" placeholder="Enter Email">
-        <br><br>
-        <button>REQUEST INVITE</button>
-    </div>
+  <div class="container">
+    <i class="fas fa-envelope icon"></i> <h1 class="big-title">Get the Invite</h1>
+    <p>Get early access to the latest features and be part of our growing community.</p>
+    <input type="text" placeholder="Enter your email address">
+    <br><br>
+    <button>REQUEST INVITE</button>
+  </div>
 </body>
 </html>
 `
